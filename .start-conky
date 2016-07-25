@@ -1,0 +1,4 @@
+#!/bin/sh
+sleep 5
+conky -d -c /home/trinetra/.conky/minconky/conky_rc
+exit

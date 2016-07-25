@@ -1,0 +1,13 @@
+[user]
+	name = Sidhant Sharma [:tk]
+	email = tigerkid001@gmail.com
+[alias]
+	cc = rev-list HEAD --count
+[sendemail]
+	smtpuser = tigerkid001@gmail.com
+	smtpserver = smtp.gmail.com
+	smtpencryption = tls
+	smtpserverport = 587
+	suppresscc = self
+[format]
+	signOff = true

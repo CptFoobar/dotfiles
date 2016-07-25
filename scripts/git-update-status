@@ -1,0 +1,31 @@
+#!/bin/sh
+
+# Script adopted from
+# http://stackoverflow.com/questions/3258243/check-if-pull-needed-in-git
+
+LBRANCH=$(git symbolic-ref --short -q HEAD)
+echo "On branch $LBRANCH..."
+echo "Fetching remote changes"
+RES=$(git fetch --quiet $(git rev-parse --symbolic-full-name --abbrev-ref @{u} | sed 's!/! !') | grep --quiet "fatal")
+
+if [ $? = 1 ]; then
+	echo "...aborting"
+	exit 1;
+else
+	echo "...done"
+fi
+
+LOCAL=$(git rev-parse @)
+REMOTE=$(git rev-parse @{u})
+MERGEBASE=$(git rev-parse @ @{u})
+
+if [ $LOCAL = $REMOTE ]; then
+	echo "Up-to-date"
+elif [ $LOCAL = $BASE ]; then
+	echo "Pull required"
+elif [ $REMOTE = $BASE ]; then
+	echo "Push required"
+else
+	RBRANCH=$(git rev-parse --symbolic-full-name --abbrev-ref @{u})
+	echo "Local branch $LBRANCH diverged from $RBRANCH."
+fi
