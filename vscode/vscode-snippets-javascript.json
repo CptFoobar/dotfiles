@@ -1,0 +1,84 @@
+{
+	"Check undefined": {
+		"prefix": "undef",
+		"body": [
+			"typeof ${0:obj} === \"undefined\""
+		],
+		"description": "Check if object or property is undefined"
+	},
+	"Object has key": {
+		"prefix": "objkey",
+		"body": [
+			"${1:obj}.hasOwnProperty('${0:key}')"
+		],
+		"description": "Check if object has a non-prototype property"
+	},
+	"Object is empty": {
+		"prefix": "objempty",
+		"body": [
+			"Object.keys(${1:obj}).length === 0 && ${1:obj}.constructor === Object"
+		],
+		"description": "Check if object is empty ({})"
+	},
+	"Mocha TC": {
+		"prefix": "it",
+		"body": [
+			"it('${1:test case}', function(done) {",
+			"$0",
+			"}"
+		]
+	},
+	"Express server": {
+		"prefix": "express-server",
+		"body": [
+			"var express = require('express');",
+			"",
+			"var DEFAULT_PORT = ${0:3000};",
+			"",
+			"var app = express();",
+			"var port = DEFAULT_PORT;",
+			"",
+			"// access logger",
+			"app.use(function(req, res, next) {",
+			"\tconsole.log('hit: ', req.path, req.method, JSON.stringify(req.body), {method: req.method, path: req.path, body: JSON.stringify(req.body)});",
+			"\tnext();",
+			"});",
+			"",
+			"app.use(function(err, req, res, next) {",
+			"// Critical exception handler",
+			"\tif (err) {",
+			"\t\tconsole.error('app.index: Critical exception: ' + err.toString());",
+			"\t\tif (!res.headersSent) {",
+			"\t\t\t// send headers",
+			"\t\t\tres.status(500).json({'rsp': {'stat': 'fail', 'err': 'Internal Server Error'}});",
+			"\t\t}",
+			"\t}",
+			"});",
+			"",
+			"app.listen(port, function () {",
+			"\tconsole.log('Listening on ' + port);",
+			"});",
+			""
+		],
+		"description": "Bare bones express server"
+	},
+	"Express CORS": {
+		"prefix": "express-cors",
+		"body": [
+			"// Enable CORS for ${1:localhost}",
+			"app.use(function(req, res, next) {",
+			"\tres.header('Access-Control-Allow-Origin', '${1:localhost}');",
+			"\tres.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');",
+			"\tres.setTimeout(${0:30000});",
+			"\tnext();",
+			"});",
+			""
+		],
+		"description": "Add CORS to express app"
+	},
+	"Use strict": {
+		"prefix": "strict",
+		"body": [ "'use strict';", "", "$0" ],
+		"description": "Insert 'use strict'"
+	}
+}

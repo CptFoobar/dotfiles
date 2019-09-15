@@ -1,0 +1,55 @@
+{
+	"Problem basecode": {
+		"prefix": "problem",
+		"body": [
+			"#include <iostream>",
+			"#include <stdio.h>",
+			"",
+			"using namespace std;",
+			"",
+			"int main() {",
+			"\tint t;",
+			"\tcin >> t;",
+			"\twhile (t--) {",
+			"\t\t$1",
+			"\t}",
+			"\treturn 0;",
+			"}"
+		],
+		"description": "Log output to console"
+	},
+	"Problem with array input": {
+		"prefix": "probarr",
+		"body": [
+			"#include <iostream>",
+			"#include <stdio.h>",
+			"#include <malloc.h>",
+			"",
+			"using namespace std;",
+			"",
+			"void printArray(${1:int} *a, int n) {",
+			"\tfor (int i = 0; i < n; i++) {",
+			"\t\tcout << a[i] << \" \";",
+			"\t}",
+			"\tcout << endl;",
+			"}",
+			"",
+			"int main() {",
+			"\tint t;",
+			"\tcin >> t;",
+			"\twhile (t--) {",
+			"\t\tint n;",
+			"\t\tcin >> n;",
+			"\t\t${1:int} *a = (${1:int}*) malloc(n * sizeof(${1:int}));",
+			"\t\tfor (int i = 0; i < n; i++) {",
+			"\t\t\tcin >> a[i];",
+			"\t\t}",
+			"\t\t$0",
+			"\t\t${2:printArray(a, n);}",
+			"\t}",
+			"\treturn 0;",
+			"}"
+		],
+		"description": "Log output to console"
+	}
+}

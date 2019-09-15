@@ -1,0 +1,77 @@
+{
+	"Add TODO": {
+		"scope": "go,java,c++",
+		"prefix": "todo",
+		"body": [
+			"// TODO: ${1:Something}"
+		],
+		"description": "Add a TODO item"
+	},
+	"Add FIXME": {
+		"scope": "go,java,c++",
+		"prefix": "fix",
+		"body": [
+			"// FIXME: ${1:Something}"
+		],
+		"description": "Add a FIXME item"
+	},
+	"Add HACK": {
+		"scope": "go,java,c++",
+		"prefix": "hack",
+		"body": [
+			"// HACK: ${1:Something}"
+		],
+		"description": "Add a FIXME item"
+	},
+	"Add NOTE": {
+		"scope": "go,java,c++",
+		"prefix": "note",
+		"body": [
+			"// NOTE: ${1:Something}"
+		],
+		"description": "Add a FIXME item"
+	},
+	"Add REVIEW": {
+		"scope": "go,java,c++",
+		"prefix": "review",
+		"body": [
+			"// REVIEW: ${1:Something}"
+		],
+		"description": "Add a FIXME item"
+	},
+	"Add DEBUG": {
+		"scope": "go,java,c++",
+		"prefix": "debug",
+		"body": [
+			"// DEBUG: ${1:Something}"
+		],
+		"description": "Add a FIXME item"
+    },
+	"Shruggie": {
+		"prefix": "shrug",
+		"body": [
+			"¯\\_(ツ)_/¯"
+		],
+		"description": "Shruggie"
+	},
+	"Copyright": {
+		"prefix": "copyright",
+		"body": [
+			"/**", 
+			"* @author Sidhant Sharma (sidhant.sh@samsung.com)",
+			"* @fileoverview ${1:Description}",
+			"* @date ${2:2019/05/01}",
+			"*",
+			"* Copyright <year> by <org>,",
+			"*",
+			"* This software is the confidential and proprietary information",
+			"* of <org>. (\"Confidential Information\"). You",
+			"* shall not disclose such Confidential Information and shall use",
+			"* it only in accordance with the terms of the license agreement",
+			"* you entered into with Samsung.",
+			"*/",
+			"",
+			"${0}"
+		]
+	}
+}

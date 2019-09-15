@@ -1,0 +1,116 @@
+{
+    "terminal.integrated.shell.windows": "C:\\windows\\System32\\cmd.exe",
+    "window.zoomLevel": 0,
+    "todohighlight.keywords": [
+        {
+            "text": "NOTE:",
+            "color": "white",
+            "border": "1px solid white",
+            "backgroundColor": "none",
+            "overviewRulerColor": "white",
+            "isWholeLine": false
+        },
+        {
+            "text": "HACK:",
+            "color": "pink",
+            "border": "1px solid red",
+            "backgroundColor": "none",
+            "overviewRulerColor": "red",
+            "isWholeLine": false
+        },
+        {
+            "text": "TODO:",
+            "color": "#dab900",
+            "border": "1px solid #dab900",
+            "backgroundColor": "none",
+            "overviewRulerColor": "#dab900",
+            "isWholeLine": false
+        },
+        {
+            "text": "FIXME:",
+            "color": "pink",
+            "border": "1px solid #c800f0",
+            "backgroundColor": "none",
+            "overviewRulerColor": "#c800f0",
+            "isWholeLine": false
+        },
+        {
+            "text": "DEBUG:",
+            "color": "orange",
+            "border": "1px solid orange",
+            "backgroundColor": "none",
+            "overviewRulerColor": "orange",
+            "isWholeLine": false
+        },
+        {
+            "text": "REVIEW:",
+            "color": "#41a7ff",
+            "border": "1px solid #41a7ff",
+            "backgroundColor": "none",
+            "overviewRulerColor": "#41a7ff",
+            "isWholeLine": false
+        },
+        {
+            "text": "IMPORTANT:",
+            "color": "#63c662",
+            "border": "1px solid #63c662",
+            "backgroundColor": "none",
+            "overviewRulerColor": "#63c662",
+            "isWholeLine": false
+        }
+    ],
+    "todohighlight.include": [
+        "**/*.js",
+        "**/*.jsx",
+        "**/*.ts",
+        "**/*.tsx",
+        "**/*.html",
+        "**/*.php",
+        "**/*.css",
+        "**/*.scss",
+        "**/*.go"
+    ],
+    "todohighlight.exclude": [
+        "**/vendor/**",
+        "**/node_modules/*"
+    ],
+    "workbench.statusBar.feedback.visible": false,
+
+    "workbench.iconTheme": "material-icon-theme",
+    "debug.toolBarLocation": "docked",
+    "editor.insertSpaces": false,
+    "go.enableCodeLens": {
+        "references": false,
+        "runtest": true
+    },
+    "docthis.authorName": "Sidhant Sharma",
+    "doxdocgen.generic.authorTag": "Sidhant Sharma",
+    "doxdocgen.generic.dateFormat": "YYYY/MM/DD",
+    "doxdocgen.generic.briefTemplate": "@fileoverview {text}",
+    "breadcrumbs.enabled": true,
+    "editor.fontSize": 14,
+    "workbench.colorTheme": "Visual Studio Dark",
+    "nodeTdd.buildOnActivation": true,
+    "nodeTdd.buildOnDelete": true,
+    "nodeTdd.buildOnCreate": true,
+    "nodeTdd.glob": "{src,test,app}/**/*.{js,ts,jsx,tsx,spec.js}",
+    "mocha.files.glob": "{test,app}/**/*.js",
+    "python.pythonPath": "D:\\Continuum\\Anaconda3\\envs\\py3\\python.exe",
+    "gitlens.gitExplorer.files.layout": "tree",
+    "gitlens.views.repositories.files.layout": "tree",
+    "C_Cpp.clang_format_fallbackStyle": "{BasedOnStyle: LLVM, IndentWidth: 4}",
+    "python.jediEnabled": false,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "[typescript]": {
+        "editor.tabSize": 4,
+        "editor.insertSpaces": false,
+        "editor.detectIndentation": false
+    },
+    "[html]": {
+        "editor.defaultFormatter": "HookyQR.beautify"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "HookyQR.beautify"
+    }
+}

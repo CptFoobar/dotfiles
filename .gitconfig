@@ -1,10 +1,10 @@
 [user]
-	name = Sidhant Sharma [:tk]
-	email = tigerkid001@gmail.com
+	name = Sidhant Sharma
+	email = sidhant.sharma1208@gmail.com
 [alias]
 	cc = rev-list HEAD --count
 [sendemail]
-	smtpuser = tigerkid001@gmail.com
+	smtpuser = sidhant.sharma1208@gmail.com
 	smtpserver = smtp.gmail.com
 	smtpencryption = tls
 	smtpserverport = 587

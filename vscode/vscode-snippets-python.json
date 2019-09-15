@@ -1,0 +1,15 @@
+{
+	"Main file template": {
+		"prefix": "main",
+		"body": [
+			"#! /usr/bin/python",
+			"",
+			"def main():",
+			"	${0:pass}",
+			"",
+			"if __name__ == \"__main__\":",
+			"	main()"
+		],
+		"description": "Log output to console"
+	}
+}
