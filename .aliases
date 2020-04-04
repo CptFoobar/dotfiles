@@ -1,0 +1,25 @@
+# ALIASES
+alias c=clear
+alias q=exit
+alias ll="ls -lhaG"
+alias lar="ls -lhaRG"
+alias py=python3
+
+
+#git
+# alias gs="git status"
+# alias gl="git log"
+# alias glp="gl -p"
+# alias glog="gl --oneline --graph"
+# alias gloga="glog --all"
+# alias gd="git diff"
+# alias gc="git commit"
+# alias gca="gc -a"
+# alias gps="git push"
+# alias gpl="git pull"
+# alias gf="git fetch"
+alias gbv="git --no-pager branch -vv"
+
+#sbt
+alias sba="sbt assembly"
+alias sbca="sbt clean assembly"

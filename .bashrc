@@ -159,3 +159,12 @@ alias atom='atom-beta -n .'
 
 ## Alias for script to check if git push/pull needed
 alias git-update-status='~/dotfiles/scripts/./git-update-status'
+
+
+if [ -f ~/.aliases ]; then 
+    source ~/.aliases
+fi
+
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
