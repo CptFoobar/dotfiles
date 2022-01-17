@@ -1,5 +1,5 @@
 #! /bin/bash
-userid="b0213483"
+userid=""
 targets=(~/Lab 
 	 ~/.ssh 
 	 ~/Documents 
@@ -23,7 +23,7 @@ dry_run() {
 }
 
 nuke() {
-  echo "Are you sure you want to nuke? Confirm with OLM ID: "
+  echo "Are you sure you want to nuke? Confirm with ID: "
   read olm_id
   olm_id=$(tr "[A-Z]" "[a-z]" <<< $olm_id)
   if [ $olm_id != $userid ]; then
